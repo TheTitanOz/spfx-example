@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+  spfx:
+    container_name: spfxcontainer
+    volumes:
+      - './:/usr/app/spfx'
+    ports:
+      - "5432:5432"
+      - "4321:4321"
+      - "35729:35729"
+    build: .
